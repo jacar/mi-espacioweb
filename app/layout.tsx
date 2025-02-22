@@ -1,6 +1,10 @@
 import "./globals.css"
 import { Montserrat } from "next/font/google"
+<<<<<<< HEAD
 import { ThemeProvider } from "@/components/theme-provider"
+=======
+import { ThemeProvider } from "@/contexts/ThemeContext"
+>>>>>>> origin/master
 import Header from "./components/Header"
 import ThemeTransition from "./components/ThemeTransition"
 import type React from "react"
@@ -30,7 +34,11 @@ export default function RootLayout({
       <body
         className={`${montserrat.className} min-h-screen bg-background text-foreground transition-colors duration-500`}
       >
+<<<<<<< HEAD
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+=======
+        <ThemeProvider>
+>>>>>>> origin/master
           <ThemeTransition />
           <Header />
           <main>{children}</main>
