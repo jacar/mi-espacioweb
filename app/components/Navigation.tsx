@@ -39,17 +39,18 @@ export default function Navigation() {
   }, [])
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-gray-900/80 backdrop-blur-md">
+    <nav className="bg-transparent">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-20">
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
               <Image
-                src="https://www.webcincodev.com/blog/wp-content/uploads/2025/02/01-1-1.png"
+                src="https://www.webcincodev.com/blog/wp-content/uploads/2025/02/logoweb5.png"
                 alt="Armando Ovalle J."
                 width={150}
-                height={30}
-                objectFit="contain"
+                height={150}
+                className="w-auto h-auto"
+                priority
               />
             </Link>
           </div>
@@ -82,10 +83,10 @@ export default function Navigation() {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className="md:hidden"
-            initial={{ opacity: 0, y: -100 }}
+            className="md:hidden bg-gray-900"
+            initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -100 }}
+            exit={{ opacity: 0, y: 100 }}
             transition={{ duration: 0.3 }}
           >
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">

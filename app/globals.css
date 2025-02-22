@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -57,6 +69,10 @@
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
+  h1,
+  h2 {
+    font-family: "Montserrat", sans-serif;
+  }
 }
 
 /* Theme transition styles */
@@ -82,7 +98,7 @@
   z-index: 1;
 }
 
-/* Custom font */
+/* Custom fonts */
 @font-face {
   font-family: "BOLDE";
   src: url("https://db.onlinewebfonts.com/t/0b126f23fbd87eea683f53b749b11348.eot");
@@ -95,5 +111,16 @@
 
 .font-bolde {
   font-family: "BOLDE", sans-serif;
+}
+
+@font-face {
+  font-family: "AGRESSIVE";
+  src: url("/fonts/AGRESSIVE.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-agressive {
+  font-family: "AGRESSIVE", sans-serif;
 }
 

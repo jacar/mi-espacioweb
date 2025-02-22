@@ -62,9 +62,9 @@
     "prop-types": "latest",
     "framer-motion": "latest",
     "tailwindcss": "latest",
-    "@heroicons/react": "latest",
+    "react-vertical-timeline-component": "latest",
     "react-type-animation": "latest",
-    "react-vertical-timeline-component": "latest"
+    "react-share": "latest"
   },
   "devDependencies": {
     "@types/node": "^22",

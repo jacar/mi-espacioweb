@@ -13,7 +13,7 @@ export default function ExceptionalDesign() {
           className="text-center"
         >
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-foreground mb-6">
-            Diseño Digital Excepcional
+            Dise&uacute;o Digital Excepcional
           </h2>
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
             Servicios Personalizados para Potenciar tu Presencia en Línea
@@ -25,7 +25,7 @@ export default function ExceptionalDesign() {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <a href="#contact" className="apple-button inline-flex items-center">
-              Contáctame
+              Contacto
               <svg
                 className="w-5 h-5 ml-2"
                 fill="none"

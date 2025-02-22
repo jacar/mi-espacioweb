@@ -1,11 +1,15 @@
 import "./globals.css"
-import { Inter } from "next/font/google"
+import { Montserrat } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import Header from "./components/Header"
 import ThemeTransition from "./components/ThemeTransition"
 import type React from "react"
+import Script from "next/script"
 
-const inter = Inter({ subsets: ["latin"] })
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800", "900"],
+})
 
 export const metadata = {
   title: "Armando Ovalle J. - Portfolio",
@@ -19,16 +23,20 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="es">
       <head>
-        <link href="https://db.onlinewebfonts.com/c/0b126f23fbd87eea683f53b749b11348?family=BOLDE" rel="stylesheet" />
+        <meta charSet="UTF-8" />
       </head>
-      <body className={`${inter.className} min-h-screen bg-background text-foreground transition-colors duration-500`}>
+      <body
+        className={`${montserrat.className} min-h-screen bg-background text-foreground transition-colors duration-500`}
+      >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <ThemeTransition />
           <Header />
           <main>{children}</main>
         </ThemeProvider>
+        <Script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js" />
+        <Script src="https://files.bpcontent.cloud/2025/02/20/03/20250220031345-3K85KGHL.js" />
       </body>
     </html>
   )

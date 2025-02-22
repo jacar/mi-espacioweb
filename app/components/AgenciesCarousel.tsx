@@ -12,7 +12,7 @@ export default function AgenciesCarousel() {
     <section className="py-12 bg-gray-900">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center mb-8">
-          <h2 className="text-3xl font-bold text-white mb-4">He trabajado con:</h2>
+          <h2 className="text-3xl font-bold text-white mb-4">He &nbsp;trabajado &nbsp; con:</h2>
         </div>
         <div className="flex flex-wrap justify-center items-center gap-8">
           {agencies.map((agency, index) => (
