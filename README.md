@@ -23,4 +23,5 @@ Mi objetivo es asegurarme de que su sitio web esté actualizado, seguro y brinde
   <img src="https://img.shields.io/badge/LinkedIn-%236A0DAD.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
 </a>
 
+![Banner](https://raw.githubusercontent.com/jacar/jacar/refs/heads/main/Blue%20Gold%20Elegant%20Minimalist%20Digital%20Marketer%20LinkedIn%20Banner.png)
 </div>
